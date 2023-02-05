@@ -1,0 +1,64 @@
+- defaults:
+  link:
+    relink: true
+  shell:
+    quiet: true
+    stderr: true
+
+- create:
+  - ~/bin
+
+- shell:
+  - description: sync pacman
+    command: sudo pacman -Syyu
+  - description: install git
+    command: if [ ! command git ]; pacman -S git; fi
+  - description: update submodules
+    command: git submodule update --init
+  - description: ensure setup scripts are executable
+    command: chmod +x setup/*.sh
+  - description: setup yay
+    command: ./setup/yay.sh
+  - description: sync yay
+    command: sudo yay -Syyu
+  - description: setup dependencies
+    command: ./setup/dependencies.sh
+
+- link:
+  - ~/.config/btop:
+    force: true
+    path: dot_configs/btop
+  - ~/.config/dunst:
+    force: true
+    path: dot_configs/dunst
+  - ~/.config/hypr:
+    force: true
+    path: dot_configs/hypr
+  - ~/.config/rofi:
+    force: true
+    path: dot_configs/rofi
+  - ~/.config/swaylock:
+    force: true
+    path: dot_configs/swaylock
+  - ~/.config/waybar:
+    force: true
+    path: dot_configs/waybar
+  - ~/.config/wlogout:
+    force: true
+    path: dot_configs/wlogout
+  - ~/.config/wezterm:
+    force: true
+    path: dot_config/wezterm
+  - ~/.zshrc:
+    force: true
+    path: dot_configs/.zshrc
+  - ~/code-flags.conf:
+    force: true
+    path: dot_configs/code-flags.conf
+  - ~/electron-flags.conf:
+    force: true
+    path: dot_configs/electron-flags.conf
+
+- shell:
+  - description: ensure all config scripts are executable
+    command: chmod +x dot_config/**/*.sh
