@@ -29,5 +29,7 @@ yay -S \
     btop \
     thunar \
     slack-desktop \
+    spotify \
+    spicetify-cli \
     visual-studio-code-bin \
     neofetch

@@ -1,9 +1,9 @@
 - defaults:
-  link:
-    relink: true
-  shell:
-    quiet: true
-    stderr: true
+    link:
+      relink: true
+    shell:
+      quiet: true
+      stderr: true
 
 - create:
   - ~/bin
@@ -25,40 +25,49 @@
     command: ./setup/dependencies.sh
 
 - link:
-  - ~/.config/btop:
-    force: true
-    path: dot_configs/btop
-  - ~/.config/dunst:
-    force: true
-    path: dot_configs/dunst
-  - ~/.config/hypr:
-    force: true
-    path: dot_configs/hypr
-  - ~/.config/rofi:
-    force: true
-    path: dot_configs/rofi
-  - ~/.config/swaylock:
-    force: true
-    path: dot_configs/swaylock
-  - ~/.config/waybar:
-    force: true
-    path: dot_configs/waybar
-  - ~/.config/wlogout:
-    force: true
-    path: dot_configs/wlogout
-  - ~/.config/wezterm:
-    force: true
-    path: dot_config/wezterm
-  - ~/.zshrc:
-    force: true
-    path: dot_configs/.zshrc
-  - ~/code-flags.conf:
-    force: true
-    path: dot_configs/code-flags.conf
-  - ~/electron-flags.conf:
-    force: true
-    path: dot_configs/electron-flags.conf
+    ~/.config/btop:
+      force: true
+      path: dot_config/btop
+    ~/.config/dunst:
+      force: true
+      path: dot_config/dunst
+    ~/.config/hypr:
+      force: true
+      path: dot_config/hypr
+    ~/.config/rofi:
+      force: true
+      path: dot_config/rofi
+    ~/.config/spicetify/Themes/catppuccin-mocha:
+      force: true
+      path: dot_config/spicetify/Themes/catppuccin-mocha
+    ~/.config/spicetify/Extensions/catppuccin-mocha.js:
+      force: true
+      path: dot_config/spicetify/Extensions/catppuccin-mocha.js
+    ~/.config/swaylock:
+      force: true
+      path: dot_config/swaylock
+    ~/.config/waybar:
+      force: true
+      path: dot_config/waybar
+    ~/.config/wlogout:
+      force: true
+      path: dot_config/wlogout
+    ~/.config/wezterm:
+      force: true
+      path: dot_config/wezterm
+    ~/.zshrc:
+      force: true
+      path: dot_config/.zshrc
+    ~/code-flags.conf:
+      force: true
+      path: dot_config/code-flags.conf
+    ~/electron-flags.conf:
+      force: true
+      path: dot_config/electron-flags.conf
+    
 
 - shell:
+  - description: setup spotify
+    command: ./setup/spotify.sh
   - description: ensure all config scripts are executable
     command: chmod +x dot_config/**/*.sh
