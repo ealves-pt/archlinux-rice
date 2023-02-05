@@ -10,7 +10,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 case $TERM in
   xterm*)
-    ZSH_THEME="agnoster";;
+    ZSH_THEME="wezm+";;
   *)
     ZSH_THEME="";;
 esac
