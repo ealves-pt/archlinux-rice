@@ -4,7 +4,6 @@ local act = wezterm.action
 return {
   color_scheme = 'Catppuccin Mocha',
   font_size = 11,
-  -- window_background_opacity = 0.9,
 
   -- Disable annoying bell
   audible_bell = 'Disabled',
