@@ -12,6 +12,10 @@ export QT_QPA_PLATFORM=xcb
 export GDK_BACKEND=wayland
 export XWAYLAND_NO_GLAMOR=1
 
+# See https://wiki.hyprland.org/Configuring/XWayland/#hidpi-xwayland
+export GDK_SCALE=2
+export XCURSOR_SIZE=32
+
 exec dbus-launch --sh-syntax --exit-with-session Hyprland
 
 ## Log WLR errors and logs to the hyprland log. Recommended
