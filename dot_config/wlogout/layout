@@ -1,0 +1,25 @@
+{
+    "label": "lock",
+    "action": "$HOME/.config/hypr/scripts/lock.sh",
+    "keybind": "l"
+}
+{
+    "label": "reboot",
+    "action": "systemctl reboot",
+    "keybind": "r"
+}
+{
+    "label": "shutdown",
+    "action": "systemctl poweroff",
+    "keybind": "s"
+}
+{
+    "label": "logout",
+    "action": "hyprctl dispatch exit 0",
+    "keybind": "e"
+}
+{
+    "label": "suspend",
+    "action": "$HOME/.config/hypr/scripts/lock.sh & sleep 0.1 && systemctl suspend",
+    "keybind": "u"
+}
