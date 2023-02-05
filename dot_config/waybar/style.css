@@ -1,0 +1,132 @@
+@import "mocha.css";
+
+* {
+    font-family: "FiraCode Nerd Font";
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: @base;
+    color: @text;
+}
+
+tooltip {
+    background: @base;
+}
+
+#clock {
+    background: @mantle;
+    color: @yellow;
+    border-radius: 10px;
+    margin: 3px 0 3px 10px;
+    padding: 0px 10px;
+}
+
+#workspaces {
+    background: @mantle;
+    border-radius: 10px;
+    margin: 3px 0px;
+    margin-left: 10px;
+}
+
+#workspaces button {
+    color: @surface0;
+    padding: 5px;
+}
+
+#workspaces > button:first-child {
+    border-radius: 10px 0 0 10px;
+    padding-left: 10px;
+}
+
+#workspaces > button:last-child {
+    border-radius: 0 10px 10px 0;
+    padding-right: 10px;
+}
+
+#workspaces > button.active {
+    color: @subtext0;
+}
+
+#workspaces > button.focused {
+    color: @text;
+    background: @maron;
+    border-radius: 10px;
+}
+
+#workspaces > button.urgent {
+    color: @crust;
+    background: @red;
+    border-radius: 10px;
+}
+
+#workspaces > button:hover {
+    background: inherit;
+    color: @text;
+}
+
+#window {
+    background: @mantle;
+    border-radius: 10px;
+    margin: 3px 60px;
+    padding: 0px 10px;
+}
+
+#tray {
+    background: @mantle;
+    margin: 3px 0;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+#network {
+    background: @mantle;
+    color: @peach;
+    margin: 3px 0 3px 10px;
+    padding-left: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+#backlight {
+    background: @mantle;
+    color: @mauve;
+    margin: 3px 0;
+    padding-left: 10px;
+}
+
+#pulseaudio {
+    background: @mantle;
+    color: @mauve;
+    margin: 3px 0;
+    padding-left: 10px;
+}
+
+#cpu {
+    background: @mantle;
+    color: @blue;
+    margin: 3px 0;
+    padding-left: 10px;
+}
+
+#memory {
+    background: @mantle;
+    color: @blue;
+    margin: 3px 0;
+    padding-left: 10px;
+}
+
+#temperature {
+    background: @mantle;
+    color: @red;
+    margin: 3px 0;
+    padding-left: 10px;
+}
+
+#battery {
+    background: @mantle;
+    color: @green;
+    margin: 3px 10px 3px 0;
+    padding: 0 10px;
+    border-radius: 0 10px 10px 0;
+}
