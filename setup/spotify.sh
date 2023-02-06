@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # prepare spotify for specitify
-sudo chmod a+wr /usr/share/spotify
-sudo chmod a+wr /usr/share/spotify/Apps -R
+sudo chmod 777 /opt/spotify
+sudo chmod 777 -R /opt/spotify/Apps
 
 # launch spotify to generate configuration files
 spotify &; disown
