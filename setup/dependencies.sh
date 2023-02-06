@@ -13,6 +13,12 @@ yay -S \
     dunst \
     swayidle \
     swaylock \
+    pipewire \
+    wireplumber \
+    xdg-desktop-portal-hyprland-git \
+    qt5-wayland \
+    qt6-wayland \
+    polkit-kde-agent \
     gvfs \
     udev-block-notify \
     blueman \
