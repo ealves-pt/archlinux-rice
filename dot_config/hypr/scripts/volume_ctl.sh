@@ -40,13 +40,13 @@ case $1 in
     # up the volume (+ 5%)
     pactl set-sink-volume @DEFAULT_SINK@ +5% > /dev/null
     send_notification
-    canberra-gtk-play -i audio-volume-change -d "changeVolume"
+    # canberra-gtk-play -i audio-volume-change -d "changeVolume"
     ;;
   down)
     amixer -D pipewire set Master on > /dev/null
     pactl set-sink-volume @DEFAULT_SINK@ -5% > /dev/null
     send_notification
-    canberra-gtk-play -i audio-volume-change -d "changeVolume"
+    # canberra-gtk-play -i audio-volume-change -d "changeVolume"
     ;;
   mute)
     # toggle mute

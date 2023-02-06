@@ -15,6 +15,8 @@ yay -S \
     swaylock \
     pipewire \
     wireplumber \
+    pipewire-pulse \
+    alsa-utils \
     xdg-desktop-portal-hyprland-git \
     qt5-wayland \
     qt6-wayland \

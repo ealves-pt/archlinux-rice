@@ -2,7 +2,17 @@
 
 The setup uses [dotbot](https://github.com/anishathalye/dotbot), just run `./install`.
 
-## Spotify
+## Troubleshooting
+
+### Sound
+
+Sound card was not being detected so I had to do
+
+```bash
+echo "options snd_hda_intel dmic_detect=0" > /etc/modprobe.d/disable-dmic.conf
+```
+
+### Spotify
 
 There is a known [issue](https://wiki.hyprland.org/Useful-Utilities/App-Clients/#spotify) with Spotify. You can do the following:
 
