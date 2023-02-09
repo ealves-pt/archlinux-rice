@@ -1,6 +1,6 @@
 #!/bin/sh
 
-swaylock \
+swaylockd \
     --indicator-radius 50 \
     --indicator-thickness 5 \
     --inside-color cba6f7 \

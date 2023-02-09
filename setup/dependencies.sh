@@ -13,6 +13,7 @@ yay -S \
     dunst \
     swayidle \
     swaylock \
+    swaylockd \
     pipewire \
     wireplumber \
     pipewire-pulse \
