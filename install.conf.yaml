@@ -58,10 +58,13 @@
     ~/.zshrc:
       force: true
       path: dot_config/.zshrc
-    ~/code-flags.conf:
+    ~/.config/chrome-flags.conf:
+      force: true
+      path: dot_config/chrome-flags.conf
+    ~/.config/code-flags.conf:
       force: true
       path: dot_config/code-flags.conf
-    ~/electron-flags.conf:
+    ~/.config/electron-flags.conf:
       force: true
       path: dot_config/electron-flags.conf
     

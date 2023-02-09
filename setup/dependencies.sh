@@ -19,6 +19,8 @@ yay -S \
     pipewire-pulse \
     alsa-utils \
     xdg-desktop-portal-hyprland-git \
+    slurp \
+    grim \
     qt5-wayland \
     qt6-wayland \
     polkit-kde-agent \
