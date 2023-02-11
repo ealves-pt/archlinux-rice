@@ -18,6 +18,7 @@ yay -S \
     wireplumber \
     pipewire-pulse \
     alsa-utils \
+    pavucontrol \
     xdg-desktop-portal-hyprland-git \
     slurp \
     grim \
