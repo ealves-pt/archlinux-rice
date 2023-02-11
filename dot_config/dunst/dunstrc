@@ -1,7 +1,7 @@
 [global]
 frame_color = "#89B4FA"
 separator_color= frame
-offset =5 x 2
+offset = 5 x 2
 
 [urgency_low]
 background = "#1E1E2E"
@@ -15,3 +15,7 @@ foreground = "#CDD6F4"
 background = "#1E1E2E"
 foreground = "#CDD6F4"
 frame_color = "#F38BA8"
+
+[ignore_chrome_popup]
+summary = "You're presenting to everyone"
+skip_display = true
