@@ -25,6 +25,9 @@
     command: ./setup/dependencies.sh
 
 - link:
+    /usr/local/bin/launch_hyprland:
+      force: true
+      path: bin/launch_hyprland
     ~/.config/btop:
       force: true
       path: dot_config/btop
