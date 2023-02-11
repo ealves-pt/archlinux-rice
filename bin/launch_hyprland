@@ -2,36 +2,31 @@
 
 cd ~
 
-export CLUTTER_BACKEND=wayland
+# See https://wiki.hyprland.org/Configuring/Environment-variables/#xdg-specifications
+export XDG_CURRENT_DESKTOP=Hyprland
 export XDG_SESSION_TYPE=wayland
+export XDG_SESSION_DESKTOP=Hyprland
+
+# See https://wiki.hyprland.org/Configuring/Environment-variables/#qt-variables
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
+export QT_QPA_PLATFORM="wayland;xcb"
 export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
-export MOZ_ENABLE_WAYLAND=1
-export WLR_NO_HARDWARE_CURSORS=1
-export WLR_BACKEND=vulkan
-export QT_QPA_PLATFORM=xcb
+export QT_QPA_PLATFORMTHEME=qt5ct
+
+# See https://wiki.hyprland.org/Configuring/Environment-variables/#toolkit-backend-variables
+export SDL_VIDEODRIVER=wayland
+export _JAVA_AWT_WM_NONEREPARENTING=1
+export CLUTTER_BACKEND=wayland
 export GDK_BACKEND=wayland
-export XWAYLAND_NO_GLAMOR=1
+
+# See https://wiki.archlinux.org/title/firefox#Wayland
+export MOZ_ENABLE_WAYLAND=1
+
+# See https://gitlab.freedesktop.org/wlroots/wlroots/-/blob/master/docs/env_vars.md
+export WLR_NO_HARDWARE_CURSORS=1
 
 # See https://wiki.hyprland.org/Configuring/XWayland/#hidpi-xwayland
 export GDK_SCALE=2
 export XCURSOR_SIZE=32
 
 exec dbus-launch --sh-syntax --exit-with-session Hyprland
-
-## Log WLR errors and logs to the hyprland log. Recommended
-#export HYPRLAND_LOG_WLR=1
-#
-## Tell XWayland to use a cursor theme
-#export XCURSOR_THEME=Catppuccin-Mocha-Blue-Cursors
-#
-## Set a cursor size
-#export XCURSOR_SIZE=24
-#
-## Example IME Support: fcitx
-#export GTK_IM_MODULE=fcitx
-#export QT_IM_MODULE=fcitx
-#export XMODIFIERS=@im=fcitx
-#export SDL_IM_MODULE=fcitx
-#export GLFW_IM_MODULE=ibus
-#
-#exec Hyprland
