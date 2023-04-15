@@ -44,4 +44,6 @@ yay -S \
     spotify \
     spicetify-cli \
     visual-studio-code-bin \
-    neofetch
+    neofetch \
+    libhandy \
+    file-roller-git

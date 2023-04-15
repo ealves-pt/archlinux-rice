@@ -61,6 +61,9 @@
     ~/.zshrc:
       force: true
       path: dot_config/.zshrc
+    ~/.gitconfig:
+      force: true
+      path: dot_config/.gitconfig
     ~/.config/chrome-flags.conf:
       force: true
       path: dot_config/chrome-flags.conf
@@ -77,3 +80,5 @@
     command: ./setup/spotify.sh
   - description: ensure all config scripts are executable
     command: chmod +x dot_config/**/*.sh
+  - description: setup development dependencies
+    command: ./setup/development.sh
