@@ -26,7 +26,7 @@ export MOZ_ENABLE_WAYLAND=1
 export WLR_NO_HARDWARE_CURSORS=1
 
 # See https://wiki.hyprland.org/Configuring/XWayland/#hidpi-xwayland
-export GDK_SCALE=1.5
+export GDK_SCALE=1
 export XCURSOR_SIZE=32
 
 exec dbus-launch --sh-syntax --exit-with-session Hyprland

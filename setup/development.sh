@@ -1,7 +1,11 @@
 #!/bin/bash
 
 yay -S \
-    bison
+    bison \
+    wget \
+    ripgrep \
+    fd \
+    direnv
 
 # install NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
